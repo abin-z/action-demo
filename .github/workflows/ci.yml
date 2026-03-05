@@ -1,3 +1,4 @@
+name: Hello Actions
 on:
   push:
     branches: [ "main" ]
@@ -10,9 +11,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        name: Checkout code
       - name: Configure CMake
         run: cmake -S . -B build
       - name: Build
         run: cmake --build build
       - name: Print Hello
-        run: echo "Hello GitHub Actions"
+        run: 
+          pwd
+          echo "Hello GitHub Actions"
