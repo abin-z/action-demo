@@ -24,3 +24,6 @@ jobs:
         run: |
           pwd
           echo "Hello GitHub Actions"
+
+      - name: Run the executable
+        run: ./build/action-demo
