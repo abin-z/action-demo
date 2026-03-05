@@ -36,7 +36,5 @@ jobs:
 
       - name: Run the executable on Windows
         if: runner.os == 'Windows'
-        working-directory: build
-        run: |
-          ls
-          action-demo.exe
+        working-directory: build/Debug
+        run: .\action-demo.exe
