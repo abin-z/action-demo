@@ -31,4 +31,4 @@ jobs:
 
       - name: Run the executable
         working-directory: build
-        run: ./action-demo
+        run: action-demo
