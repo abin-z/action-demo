@@ -26,4 +26,5 @@ jobs:
           echo "Hello GitHub Actions"
 
       - name: Run the executable
-        run: ./build/action-demo
+        working-directory: build
+        run: ./action-demo
